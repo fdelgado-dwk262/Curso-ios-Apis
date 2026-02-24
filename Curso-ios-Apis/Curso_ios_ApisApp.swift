@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import TipKit
 
 @main
 struct Curso_ios_ApisApp: App {
+    
+    init() {
+        try? Tips.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

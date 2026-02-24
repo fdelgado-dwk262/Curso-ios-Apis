@@ -9,13 +9,40 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack(spacing: 10) {
+                NavigationLink(destination: VistaConCicloDeVida()) {
+                    Text("Vista con ciclo de vida")
+                }
+                NavigationLink(destination: VistaPhotoPicker()) {
+                    Text("PhotoPicker")
+                }
+                NavigationLink(destination: VistaCompartir()) {
+                    Text("Compartir")
+                }
+                NavigationLink(destination: VistaMapas()) {
+                    Text("Mapas")
+                }
+                NavigationLink(destination: VistaTipKit()) {
+                    Text("TipKit")
+                }
+                NavigationLink(destination: VistaHaptics()) {
+                    Text("Haptics")
+                }
+                NavigationLink(destination: VistaConectividad()) {
+                    Text("Conectividad")
+                }
+                NavigationLink(destination: VistaSonidos()) {
+                    Text("Sonidos")
+                }
+                NavigationLink(destination: VistaWebViewSimple()) {
+                    Text("VistaWebViewSimple")
+                }
+                NavigationLink(destination: VistaWebKit()) {
+                    Text("VistaWebKit")
+                }
+            }
         }
-        .padding()
     }
 }
 
