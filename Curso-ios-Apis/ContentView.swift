@@ -39,8 +39,25 @@ struct ContentView: View {
                     Text("VistaWebViewSimple")
                 }
                 NavigationLink(destination: VistaWebKit()) {
-                    Text("VistaWebKit")
+                    Text("Html")
                 }
+                NavigationLink(destination: VistaFicheros()) {
+                    Text("Ir a ficheros")
+                }
+                
+                /*
+                 Launch screen:
+                 - Ir a configuración en Target > Info
+                 - Añadir a clave Launch Screen ( con el + )
+                 - Dentro configurar ( añadir ):
+                    - Background color   ( con el valor .-)  launchScreen
+                    - Image Name         ( con el valor .-)  launchScreenColor
+                 */
+                
+                NavigationLink(destination: VistaThemes()) {
+                    Text("Personalización del Theme")
+                }
+
             }
         }
     }
